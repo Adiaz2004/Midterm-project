@@ -1,0 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SimpleMovingPlatform : MonoBehaviour
+{
+    public Transform targetA; // Transform of the starting point.
+    public Transform targetB; // Transform of the ending point.
+    public float speed = 4.0f;
+
+    private Vector3 currentTarget;
+
+    private void Start()
+    {
+        currentTarget = targetB.position;
+    }
